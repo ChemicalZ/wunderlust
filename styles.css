@@ -648,7 +648,7 @@ header p {
 }
 #about div {
   display: grid;
-  grid-template-columns: 33vw 33vw;
+  grid-template-columns: 40vw 40vw;
   grid-template-rows: auto auto;
   place-items: center;
   gap: 1rem;
@@ -656,6 +656,7 @@ header p {
 }
 #about img {
   width: 100%;
+  height: 100px;
 }
 #about div section {
   display: grid;
