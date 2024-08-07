@@ -394,6 +394,7 @@
 }
 
 /* Base Style */
+/*TODO: fix nav bar*/
 h1, h2, h3 {
     font-family: 'Molle';
 }
@@ -884,7 +885,108 @@ footer a {
     width: 100%;
   }
 
+  #plan {
+    display: grid;
+    justify-content: center;
+    background: var(--yellow);
+    width: 100%;
+    padding-bottom: 1rem;
+}
 
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 90%; 
+}
+
+#plan section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: var(--teal);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#plan h3 {
+    margin: 1rem;
+    justify-self: left;
+}
+
+#plan h4 {
+    margin-bottom: 10px;
+}
+
+#plan section a img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
+
+
+#testimonials > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  background: var(--blue);
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about h3 {
+  margin: 1rem;
+}
+
+#about div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 80%; /* Adjust as needed to center the content */
+}
+
+#about div section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#about img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+input[type="submit"] {
+  width: 250px;
+  justify-self: end;
+  height: 75px;
+  background: var(--purple);
+  color: white;
+  padding: .75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+footer{ 
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  margin-top: 1rem;
+}
 
 
 }
